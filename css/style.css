@@ -1,0 +1,565 @@
+*{
+    box-sizing: border-box;
+}
+
+#loading{
+    display: none;
+}
+
+
+/* start div ---> whatsup */
+
+.whatsup-tool , .single-tool{
+   
+   border: 1px solid green;
+   background-color: green;
+   color: white;
+   padding: 5px;
+   
+}
+.whatsup-tool{
+}
+
+
+.iconss i{
+    margin-right: 12px;
+    cursor: pointer;
+    padding-top: 12px;
+
+}
+.whatsup-name,.person-name,.story-name{
+    display: inline;
+    font-weight: bold;
+    padding-right: 31px;
+}
+
+
+
+
+/* end div ---> whatsup */
+
+
+/* start div ---> whatsup-toolbar */
+
+
+.whatsup-toolbar .toolbar{
+    background-color: green;
+    font-weight: bold;
+
+
+
+}
+
+.whatsup-toolbar .items-toolbar{
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+/*
+.whatsup-toolbar .items-toolbar:hover{
+    border:1px solid transparent;
+    border-bottom: 5px solid white;
+
+}*/
+
+.whatsup-toolbar .items-toolbar.active{
+    border:1px solid transparent;
+    border-bottom: 5px solid white;
+
+}
+
+
+
+
+
+
+
+/* end div ---> whatsup-toolbar */
+
+
+/* start div ---> whatsup-content */
+
+.whatsup-content{
+    display: block;
+    
+}
+
+.fa-check{
+    color: gray;
+}
+
+.content-col{
+    border:1px solid transparent;
+    
+    padding-top: 5px;
+    padding-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.content-time
+{
+    position: absolute;
+    right: 10px;
+    top:20px;
+    display: inline-block;
+    font-size: 14px;
+
+
+}
+
+.content-col:not(:last-child){
+    border-bottom: 1px solid gray;
+
+}
+
+.content-col:hover{
+    background-color: lightgray;
+}
+
+.contact-img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+
+.content-name{
+       font-weight: bold;
+        font-size: 30px;
+        color: black;
+        display: inline-block;
+        margin-left: 11px;
+}
+
+.content-message{
+    margin: -25px 82px;
+    font-size: 18px;
+    
+    
+}
+
+.number-message{
+    width: 30px;
+    height: 30px;
+    background: green;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+}
+
+.message{
+    display: inline;
+    margin-left: 5px;
+}
+
+
+
+
+/* end div ---> whatsup-content */
+
+
+/* start div ---> status-content */
+
+
+.status-content{
+    display: none;
+}
+
+
+.new_status{
+    color: gray;
+}
+
+.time-status{
+    font-size: 13px;
+    color:gray;
+}
+
+.img-status{
+    border: 3px solid green;
+
+}
+
+.img-status2{
+   border-top: 3px solid green;
+   border-left: 3px solid white;
+   border-bottom: 3px solid green;
+   border-right: 3px solid white;
+}
+
+.add-story{
+    position: absolute;
+    bottom: 0;
+    top: 48px;
+    left: 50px;
+    background: green;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+    border:1px solid white;
+}
+
+/* end div ---> status-content */
+
+
+/* start div ---> calls-content */
+
+.cal-content{
+   
+    position: relative;
+}
+
+.calls-content{
+    display: none;
+}
+
+.icon-call{
+    position: absolute;
+    right: 40px;
+    top:25px;
+    font-size: 40px;
+    color: green;
+}
+
+.fa-long-arrow-down{
+    color: red;
+}
+
+.fa-long-arrow-up{
+    color: green;
+}
+/* end div ---> calls-content */
+
+
+
+/* start div ---> singe-page */
+
+.single-page{
+    display: none;
+}
+.single-tool{
+    height: 70px;
+}
+.single-page .person-name,.story-name{
+    font-size: 20px;
+    padding-right: 0;
+}
+.single-page .person-img,.story-img{
+
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    margin-right: 5px;
+}
+
+.single-page .single-time, .story-time {
+    
+    font-size: 10px;
+    position: absolute;
+    color: #eee;
+    margin-left: 89px;
+    margin-top: -10px;
+}
+
+.single-page  .row>* {
+    width: calc(100% /2);
+}
+
+
+.single-page .repla{
+    
+    float: right;
+    
+}
+
+.single-page .repla ,.self-replay {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: black;
+    font-weight: 400;
+
+}
+
+
+.single-page .self-replay {
+    float: left;
+    background-color: #94d78d;
+}
+
+.all_messages{
+    max-height: 460px;
+    overflow-x: hidden;
+}
+
+.single-page .clearflix
+{
+    clear: both;
+}
+
+
+.single-page .write-input{
+    position: absolute;
+    width: 98%;
+    padding-top: 20px;
+    bottom: 0;
+    
+}
+
+.single-page .write-message{
+    padding: 0 0;
+    margin: 0 0;
+
+
+}
+.single-page .write-message input{
+    width: 92%;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid gray;
+    outline: none;
+    text-indent: 4%;
+
+
+}
+
+.single-page .write-message button{
+    width: 45px;
+    height: 45px;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid green;
+}
+
+.single-page .camera-i ,.link-i, .fa-meh-o{
+    position: absolute;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+
+}
+
+.single-page .fa-meh-o{
+    left: 5%;
+}
+
+.single-page .link-i{
+    right: 9%;
+
+}
+
+.single-page .camera-i {
+
+    right: 6%;
+
+}
+
+
+.time-message{
+    font-size: 5px;
+    padding-left: 70px;
+}
+
+
+
+/* end div ---> singe-page */
+
+
+
+/* start single story */
+
+.single-story{
+    display: none;
+}
+
+.ranges{
+    border: 1px solid gray;
+    height: 3px;
+    background: gray;
+}
+
+.rangee{
+    background: white;
+    width: 0%;
+    border: 1px solid white;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    bottom: 0px;
+    height: 4px;
+}
+
+.story-time{
+    color: gray;
+}
+
+.replay-story , .fa-angle-up{
+    cursor: pointer;
+    color: black;
+}
+
+/*end single story*/
+
+/* start single calls*/
+
+.single-calls{
+    display: none;
+}
+
+.single-calls-content{
+    background: black;
+    color: white;
+    min-height: 650px;
+    position: relative;
+}
+
+.calls-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+.calls-icons{
+    position: absolute;
+    bottom: 0;
+    border: 1px solid gray;
+    width: 100%;
+    background-color: gray;
+}
+
+.Alliconss i{
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.Alliconss .fa-phone{
+    background: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 13px;
+
+
+}
+
+fa-long-arrow-left{
+    cursor: pointer;
+}
+
+/*end single calls*/
+
+@media(min-width:300px) and (max-width:480px) {
+   
+
+    .whatsup-name, .person-name, .story-name {
+       
+        padding-right: 0; 
+    }
+
+    .all_messages {
+        min-height: 503px;
+    }
+    .single-page .write-message input {
+        width: 70%;
+        text-indent: 14%;
+        
+    }
+    .single-page .fa-meh-o {
+        left: 17%;
+    }
+    .single-page .link-i {
+        right: 29%;
+    }
+    .single-page .camera-i {
+        right: 20%;
+    }
+
+    
+}
+
+@media(min-width:481px) and (max-width:768px) {
+   
+
+    .all_messages {
+        
+        min-height: 884px;
+    } 
+    .single-page .write-message input {
+        width: 83%;
+        text-indent: 8%;
+        
+    }
+    .single-page .fa-meh-o {
+        left: 11%;
+    }
+    .single-page .link-i {
+        right: 17%;
+    }
+
+    .single-page .camera-i {
+        right: 12%;
+    }
+
+    .single-calls-content,.single-story,.whatsup-content,.single-calls {
+        
+        min-height: 1024px;
+    }
+
+
+
+}
+
+@media(min-width:769px) and (max-width:1023px){
+
+    body{
+        height: 1114px;
+    }
+    .single-page .write-input {
+        bottom: 69px;
+    }
+
+    .all_messages {
+        
+        min-height: 884px;
+    }
+
+    .single-page .write-message input {
+        width: 87%;
+        text-indent: 7%;
+        
+    }
+    .single-page .fa-meh-o {
+        left: 8%;
+    }
+    .single-page .link-i {
+        right: 17%;
+    }
+
+    .single-page .camera-i {
+        right: 10%;
+    }
+
+    .single-calls-content {
+       
+        min-height: 1114px;
+    }
+
+    
+
+
+}
+
+
+.fa-long-arrow-left{
+    cursor: pointer;
+}
+
